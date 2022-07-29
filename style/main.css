@@ -1,5 +1,5 @@
 .menu {
-  width: 300px;
+  width: 100px;
 }
 .menu__list {
   display: flex;
@@ -12,7 +12,7 @@
 .menu__item {
   width: 100px;
   margin-right: 24px;
-  color: #8d0d0d;
+  color: #52910a;
 }
 .menu__item:hover {
   cursor: pointer;

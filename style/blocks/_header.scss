@@ -1,6 +1,6 @@
-$width: 300px;
+$width: 100px;
 
-$mainColor: rgb(141, 13, 13);
+$mainColor: rgb(82, 145, 10);
 
 @function toRem($px) {
 	@return $px / 16px + 0rem;
