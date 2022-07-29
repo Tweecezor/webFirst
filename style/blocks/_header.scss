@@ -1,0 +1,42 @@
+$width: 300px;
+
+$mainColor: rgb(141, 13, 13);
+
+@function toRem($px) {
+	@return $px / 16px + 0rem;
+}
+
+@mixin tablets {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+
+.menu {
+	width: $width;
+
+	&__list {
+		display: flex;
+		@include tablets {
+			display: none;
+		}
+	}
+
+	&__item {
+		width: 100px;
+		margin-right: 12px + 12px;
+		color: $mainColor;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		&--yellow {
+			color: yellow;
+		}
+
+		&:last-child() {
+			margin-right: 0px;
+		}
+	}
+}

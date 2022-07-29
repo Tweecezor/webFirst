@@ -1,0 +1,25 @@
+.menu {
+  width: 300px;
+}
+.menu__list {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .menu__list {
+    display: none;
+  }
+}
+.menu__item {
+  width: 100px;
+  margin-right: 24px;
+  color: #8d0d0d;
+}
+.menu__item:hover {
+  cursor: pointer;
+}
+.menu__item--yellow {
+  color: yellow;
+}
+.menu__item:last-child() {
+  margin-right: 0px;
+}
